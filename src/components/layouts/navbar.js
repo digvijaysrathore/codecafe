@@ -7,7 +7,7 @@ const ComponentNavbar = () => {
     return (
         <nav className="nav-wrapper black darken-3">
             <div className="container">
-                <Link to="/" className="brand-logo left">Devs</Link>
+                <Link to="/" className="brand-logo left">[code]</Link>
                 <InLinks />
                 <OutLinks />
             </div>
