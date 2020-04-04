@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import InLinks from './inlinks';
 import OutLinks from './outlinks';
+import { connect } from 'react-redux';
 
 const ComponentNavbar = () => {
     return (
@@ -15,4 +16,11 @@ const ComponentNavbar = () => {
     )
 }
 
-export default ComponentNavbar;
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps)(ComponentNavbar);

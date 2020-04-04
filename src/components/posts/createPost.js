@@ -16,6 +16,7 @@ class Write extends Component {
         e.preventDefault();
         //console.log(this.state);
         this.props.createPost(this.state)
+        document.getElementById('done').innerHTML = "Posted Your New Article!"
     }
     render() {
         return (
@@ -30,8 +31,9 @@ class Write extends Component {
                         <input type="text" id="content" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
-                        <button className="btn pink lighten-1 z-depth-0">POST</button>
+                        <button className="btn blue lighten-1 z-depth-0">POST</button>
                     </div>
+                    <p id="done"></p>
                 </form>
             </div>
         )
