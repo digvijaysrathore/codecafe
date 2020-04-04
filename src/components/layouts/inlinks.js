@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Profiler } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signOut } from '../../store/actions/authActions';
@@ -7,9 +7,9 @@ const InLinks = (props) => {
 
     return (
         <ul className="right">
-            <li><NavLink to="/write">Write</NavLink></li>
+            <li><NavLink to="/write">Write <i className="fa fa-pencil"></i></NavLink></li>
             <li><a onClick={props.signOut}>Logout</a></li>
-            <li><NavLink to="/" className="btn btn-floating blue lighten-1">NN</NavLink></li>
+            <li><NavLink to="/" className="btn btn-floating blue lighten-1">{props.profile.initials}</NavLink></li>
         </ul>
     )
 }

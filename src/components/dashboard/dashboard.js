@@ -1,9 +1,9 @@
 import React from 'react';
-import Notifs from './notifs';
 import PostsList from '../posts/postsList';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
+import { Redirect } from 'react-router-dom';
 
 class Dashboard extends React.Component {
     render() {
@@ -12,12 +12,7 @@ class Dashboard extends React.Component {
         return (
             <div className="dashboard container">
                 <div className="row">
-                    <div className="col s12 m6">
-                        <PostsList posts={posts} />
-                    </div>
-                    <div className="col s12 m5 offset-ml">
-                        <Notifs />
-                    </div>
+                    <PostsList posts={posts} /> 
                 </div>
             </div>
         )
@@ -27,7 +22,8 @@ class Dashboard extends React.Component {
 const mapStateToProps = (state) => {
     // console.log(state);
     return {
-      posts: state.firestore.ordered.posts
+      posts: state.firestore.ordered.posts,
+      auth: state.firebase.auth
     }
   }
 

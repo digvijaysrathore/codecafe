@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createPost } from '../../store/actions/postActions';
+import { Redirect } from 'react-router-dom';
 
 class Write extends Component {
     state = {
@@ -16,9 +17,11 @@ class Write extends Component {
         e.preventDefault();
         //console.log(this.state);
         this.props.createPost(this.state)
-        document.getElementById('done').innerHTML = "Posted Your New Article!"
+        document.getElementById("done").innerHTML = "Your Words Got Posted!"
     }
     render() {
+        const { auth } = this.props;
+        if (!auth.uid) return <Redirect to="/login" />
         return (
             <div className="container">
                 <form onSubmit={this.handleSubmit} className="white">
@@ -40,10 +43,16 @@ class Write extends Component {
     }
 }
 
+const mapStateToProps = (state) => {
+    return  {
+        auth: state.firebase.auth
+    }
+}
+
 const mapDispatchToProps = (dispatch) => {
     return {
         createPost: (post) => dispatch(createPost(post))
     }
 }
 
-export default connect(null, mapDispatchToProps)(Write);
+export default connect(mapStateToProps, mapDispatchToProps)(Write);
