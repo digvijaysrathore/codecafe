@@ -17,7 +17,6 @@ class Write extends Component {
         e.preventDefault();
         //console.log(this.state);
         this.props.createPost(this.state)
-        document.getElementById("done").innerHTML = "Your Words Got Posted!"
     }
     render() {
         const { auth } = this.props;
