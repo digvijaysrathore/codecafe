@@ -7,7 +7,7 @@ const InLinks = (props) => {
 
     return (
         <ul className="right">
-            <li><NavLink to="/write">Write <i className="fa fa-pencil"></i></NavLink></li>
+            <li><NavLink to="/write"><a class="waves-effect waves-light pink btn">button <i class="material-icons right">book</i></a></NavLink></li>
             <li><a onClick={props.signOut}>Logout</a></li>
             <li><NavLink to="/" className="btn btn-floating blue lighten-1">{props.profile.initials}</NavLink></li>
         </ul>

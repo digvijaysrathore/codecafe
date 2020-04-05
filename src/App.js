@@ -6,6 +6,7 @@ import PostDetails from './components/posts/postDetails';
 import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
 import Write from './components/posts/createPost';
+import ComponentFooter from './components/layouts/footer';
 
 class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
             <Route path="/join" component={Signup} />
             <Route path="/write" component={Write} />
           </Switch>
+          <ComponentFooter />
         </div>
       </BrowserRouter>
     );

@@ -20,6 +20,8 @@ class Signup extends Component {
     render() {
         return (
             <div className="container">
+                <br />
+                <h4>Aha! We are waiting for you.</h4>
                 <form onSubmit={this.handleSubmit} className="white">
                     <div className="input-field">
                         <label htmlFor="email">Mail ID</label>
@@ -37,6 +39,7 @@ class Signup extends Component {
                         <button className="btn pink lighten-1 z-depth-0">JOIN</button>
                     </div>
                 </form>
+                <br />
             </div>
         )
     }
