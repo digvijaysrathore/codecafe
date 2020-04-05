@@ -18,7 +18,7 @@ const PostDetails = (props) => {
                     </div>
                     <div className="card-action grey lighten-4 grey-text">
                         <div>Posted by { post.authorName }</div>
-                        <div>3rd April, 2020</div>
+                        <div></div>
                     </div>
                 </div>
             </div>

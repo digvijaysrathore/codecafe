@@ -21,6 +21,7 @@ class Write extends Component {
     }
     render() {
         const { auth } = this.props;
+        const profile = auth.profile;
         if (!auth.uid) return <Redirect to="/login" />
         return (
             <div className="container">
@@ -30,8 +31,8 @@ class Write extends Component {
                         <input type="text" id="title" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
+                        <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
                         <label htmlFor="content">Write</label>
-                        <input type="text" id="content" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <button className="btn blue lighten-1 z-depth-0">POST</button>

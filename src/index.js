@@ -12,14 +12,17 @@ import fireConfig from './config/fireConfig';
 const store = createStore(rootReducer,
   compose(
     applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore})),
-    reactReduxFirebase(fireConfig),
-    reduxFirestore(fireConfig, {useFirestoreForProfile: true, userProfile: 'users'})
+    reactReduxFirebase(fireConfig, { useFirestoreForProfile: true, userProfile: 'users', attachAuthIsReady: true}),
+    reduxFirestore(fireConfig)
   )
 );
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-);
+store.firebaseAuthIsReady.then(() => {
+  ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    document.getElementById('root')
+  );
+})
+
