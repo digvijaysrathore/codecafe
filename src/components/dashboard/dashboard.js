@@ -15,6 +15,9 @@ class Dashboard extends React.Component {
                 <div className="row">
                     <PostsList posts={posts} /> 
                 </div>
+                <div className="center">
+                    <iframe className="center" src="https://docs.google.com/forms/d/e/1FAIpQLSfvDXNPgyAF-o1NH7PeiRxPZSB4sIRYH6c1ZWADqnQbsqFNSA/viewform?embedded=true" width="640" height="458" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                </div>
             </div>
         )
     }
