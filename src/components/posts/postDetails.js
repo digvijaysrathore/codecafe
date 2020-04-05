@@ -6,6 +6,7 @@ import { Redirect } from 'react-router-dom';
 
 const PostDetails = (props) => {
     const {post, auth} = props
+    console.log(post)
     if (!auth.uid) return <Redirect to="/login" />
     if (post) {
         return (
