@@ -38,6 +38,7 @@ class Write extends Component {
                     </div>
                     <p id="done"></p>
                 </form>
+                <br />
             </div>
         )
     }

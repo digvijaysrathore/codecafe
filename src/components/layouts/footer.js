@@ -9,7 +9,7 @@ const ComponentFooter = () => {
               <h5 className="white-text">Code And Launch</h5>
               <p className="grey-text text-lighten-4">Nova Cafe is a platform for people who code startups.</p>
               <p className="grey-text text-lighten-4">Suggest how we can improve Nova Cafe, thanks! Tap the button below to suggest something.</p>
-              <a class="waves-effect waves-light pink btn"  target="_blank" href="https://forms.gle/b4r9K5FkuRzuf15w6">button <i class="material-icons right">assignment</i></a>
+              <a class="waves-effect waves-light pink btn"  target="_blank" href="https://forms.gle/b4r9K5FkuRzuf15w6">Help Us Improve <i class="material-icons right">assignment</i></a>
             </div>
             <div className="col l4 offset-l2 s12">
               <h5 className="white-text">Connect</h5>

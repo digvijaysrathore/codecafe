@@ -22,17 +22,17 @@ class Signin extends Component {
             <div className="container">
                 <br />
                 <h4>Welcome back, let's code and launch!</h4>
-                <form onSubmit={this.handleSubmit} className="white">
+                <form onSubmit={this.handleSubmit} >
                     <div className="input-field">
                         <label htmlFor="email">Mail ID</label>
-                        <input type="email" id="email" onChange={this.handleChange} />
+                        <input type="email" id="email" className="white-text" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <label htmlFor="password">Password</label>
-                        <input type="password" id="password" onChange={this.handleChange} />
+                        <input type="password" id="password" className="white-text" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
-                        <button className="btn pink lighten-1 z-depth-0">LOGIN</button>
+                        <button className="btn blue darken-1 z-depth-0">LOGIN</button>
                     </div>
                 </form>
                 <br />
