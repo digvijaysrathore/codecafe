@@ -11,7 +11,7 @@ const ComponentNavbar = (props) => {
         <div>
             <nav className="nav-wrapper yellow lighten-1">
                 <div className="container">
-                    <p className="black-text">Read about the vision, team and the contributors of the platform, <a href="" className="blue-text">here</a>. Talk to the lead contributor, <a href="https://instagram.com/digvijaysrathore" target="_blank" className="blue-text">here</a>.</p>
+                    <p className="black-text">Read about the vision, team and the contributors of the platform, <a href="" className="blue-text">here</a>. Thanks!</p>
                 </div>
             </nav>
             <nav className="nav-wrapper black darken-3">

@@ -7,6 +7,7 @@ import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
 import Write from './components/posts/createPost';
 import ComponentFooter from './components/layouts/footer';
+import Wall from './components/chat/wall';
 
 class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
             <Route path="/login" component={Signin} />
             <Route path="/join" component={Signup} />
             <Route path="/write" component={Write} />
+            <Route path="/chat" component={Wall} />
           </Switch>
           <ComponentFooter />
         </div>
