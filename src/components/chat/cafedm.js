@@ -28,7 +28,7 @@ class Cafe extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <div>
                         <label htmlFor="message">Message</label>
-                        <input type="text" id="message" className="white-text" onChange={this.handleChange}></input>
+                        <input type="text" id="message" ref={(ref) => this.mainInput= ref} className="white-text" onChange={this.handleChange}></input>
                     </div>
                     <div className="input-field">
                         <button className="btn blue lighten-1 z-depth-0">SEND</button>
