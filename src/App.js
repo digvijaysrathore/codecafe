@@ -16,12 +16,12 @@ class App extends React.Component {
         <div className="App">
           <ComponentNavbar />
           <Switch>
-            <Route exact path="/" component={Dashboard} />
+            <Route exact path="/dash" component={Dashboard} />
             <Route path="/post/:id" component={PostDetails} />
             <Route path="/login" component={Signin} />
             <Route path="/join" component={Signup} />
             <Route path="/write" component={Write} />
-            <Route path="/chat" component={Wall} />
+            <Route path="/" component={Wall} />
           </Switch>
           <ComponentFooter />
         </div>
