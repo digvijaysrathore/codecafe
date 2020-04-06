@@ -17,6 +17,7 @@ class Cafe extends Component {
         e.preventDefault();
         //console.log(this.state);
         this.props.sendMessage(this.state);
+        this.message.value = "";
     }
     render() {
         const { auth } = this.props;
