@@ -1,18 +1,8 @@
-body {
-    background-color: #1e1d21;
-}
-
-h4 {
-    color: white;
-}
-
-.card {
-    background-color:  #37383a;
-    color: white;
-}
-
 form {
     padding: 20px;
     margin-top: 60px;
-    background-color: #37383a;
+}
+
+body {
+    background-color: #f3f3f3;
 }

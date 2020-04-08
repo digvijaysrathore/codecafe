@@ -1,5 +1,5 @@
 import React from 'react';
-import PostsList from '../posts/postsList';
+import PostsList from '../products/projectList';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';

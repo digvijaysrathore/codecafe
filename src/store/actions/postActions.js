@@ -10,6 +10,7 @@ export const createPost = (post) => {
             ...post,
             authorName: profile.name,
             authodId: authorId,
+            upvotes: 1,
             createdAt: new Date()
         }).then(() => {
             dispatch({ type: 'CREATE_POST', post});

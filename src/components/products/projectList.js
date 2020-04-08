@@ -1,5 +1,5 @@
 import React from 'react';
-import PostSummary from './postSummary';
+import PostSummary from './projectFront';
 import { Link } from 'react-router-dom';
 
 const PostsList = ({posts}) => {

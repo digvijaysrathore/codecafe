@@ -14,11 +14,15 @@ const PostDetails = (props) => {
             <div className="container section post-details">
                 <div className="card z-depth-0">
                     <div className="card-content">
-                        <span className="card-title">{ post.title }</span>
-                        <p>{ post.content }</p>
+                        <span className="card-title">{ post.name } - {post.intro}</span>
+                        <p>{ post.description }</p>
+                        <a className="purple-text" href={post.link}>Visit {post.name}</a>
+                    </div>
+                    <div className="center">
+                    <img src={post.image} height="30%" width="50%"/>
                     </div>
                     <div className="card-action grey lighten-4 grey-text">
-                        <div>Posted by { post.authorName }</div>
+                        <div>Made by { post.authorName }</div>
                         <div></div>
                     </div>
                 </div>

@@ -9,9 +9,9 @@ const ComponentNavbar = (props) => {
     const links = auth.uid ? <InLinks profile={profile} /> : <OutLinks />;
     return (
         <div>
-            <nav className="nav-wrapper black darken-3">
+            <nav className="nav-wrapper white">
                 <div className="container">
-                    <Link to="/" className="brand-logo left">[cafe]</Link>
+                    <Link to="/" className="brand-logo left black-text"></Link>
                     { links }
                 </div>
             </nav>

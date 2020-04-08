@@ -2,13 +2,10 @@ import React from 'react';
 import ComponentNavbar from './components/layouts/navbar';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Dashboard from './components/dashboard/dashboard';
-import PostDetails from './components/posts/postDetails';
+import PostDetails from './components/products/projectDetails';
 import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
-import Write from './components/posts/createPost';
-import ComponentFooter from './components/layouts/footer';
-import Wall from './components/chat/wall';
-import Land from './components/land';
+import Write from './components/products/addProject';
 
 class App extends React.Component {
   render() {
@@ -17,15 +14,12 @@ class App extends React.Component {
         <div className="App">
           <ComponentNavbar />
           <Switch>
-            <Route exact path="/dash" component={Dashboard} />
+            <Route exact path="/" component={Dashboard} />
             <Route path="/post/:id" component={PostDetails} />
             <Route path="/login" component={Signin} />
             <Route path="/join" component={Signup} />
             <Route path="/write" component={Write} />
-            <Route path="/" component={Wall} />
-            <Route path="/land" component={Land}/>
           </Switch>
-          <ComponentFooter />
         </div>
       </BrowserRouter>
     );

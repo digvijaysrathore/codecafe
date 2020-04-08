@@ -25,11 +25,11 @@ class Signin extends Component {
                 <form onSubmit={this.handleSubmit} >
                     <div className="input-field">
                         <label htmlFor="email">Mail ID</label>
-                        <input type="email" id="email" className="white-text" onChange={this.handleChange} />
+                        <input type="email" id="email" className="black-text" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <label htmlFor="password">Password</label>
-                        <input type="password" id="password" className="white-text" onChange={this.handleChange} />
+                        <input type="password" id="password" className="black-text" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <button className="btn blue darken-1 z-depth-0">LOGIN</button>
