@@ -10,7 +10,7 @@ import { Redirect } from 'react-router-dom';
 class Home extends Component {
     render (){
         const {auth} = this.props;
-        if (auth.uid) return <Redirect to='/login' />
+        if (auth.uid) return <Redirect to='/dashboard' />
         return (
             <div className="home">
             <section className="container">
