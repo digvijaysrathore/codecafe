@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import gif from "../../assets/hero.gif";
 import "../../styles.css";
 import { NavLink } from "react-router-dom";
+import { connect } from 'react-redux';
+import { firestoreConnect } from 'react-redux-firebase';
+import { compose } from 'redux';
+import { Redirect } from 'react-router-dom';
 
 class Home extends Component {
     render (){
@@ -30,4 +34,17 @@ class Home extends Component {
     }
 }
 
-export default Home;
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+      users: state.firestore.ordered.users,
+      auth: state.firebase.auth
+    }
+  }
+
+export default compose(
+    connect(mapStateToProps),
+    firestoreConnect([
+        { collection: 'users' }
+    ])
+)(Dashboard);
