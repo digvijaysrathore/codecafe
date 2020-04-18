@@ -1,6 +1,7 @@
 const initState = {
-    authError: null
-}
+    authError: null,
+    users: []
+};
 
 const authReducer = (state = initState, action) => {
     switch(action.type){

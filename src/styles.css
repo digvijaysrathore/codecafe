@@ -1,8 +1,21 @@
-form {
-    padding: 20px;
-    margin-top: 60px;
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu+2|Lato&display=swap');
+.navbar {
+    background-color: #1e2a78;
+    font-family: 'Lato', sans-serif;
 }
 
-body {
-    background-color: #f3f3f3;
+.home {
+    background-color: #ffc900;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+h2 {
+    letter-spacing: 5px;
+}
+
+h5 {
+    font-family: 'Baloo Tammudu 2', cursive;
 }

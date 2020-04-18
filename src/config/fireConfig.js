@@ -3,15 +3,14 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 var firebaseConfig = {
-    apiKey: "AIzaSyBl7VEFPYp93nVLzTIgpRCnZSdIAvIBVSc",
-    authDomain: "devs-7b261.firebaseapp.com",
-    databaseURL: "https://devs-7b261.firebaseio.com",
-    projectId: "devs-7b261",
-    storageBucket: "devs-7b261.appspot.com",
-    messagingSenderId: "654924319583",
-    appId: "1:654924319583:web:d99c0be5a2ecad740b84ea",
-    measurementId: "G-KETSTDHT10"
-  };
+  apiKey: "AIzaSyDJHqhnw-rt0_tTgGkYOBSPif2Y4O_AnIk",
+  authDomain: "nova-cafe.firebaseapp.com",
+  databaseURL: "https://nova-cafe.firebaseio.com",
+  projectId: "nova-cafe",
+  storageBucket: "nova-cafe.appspot.com",
+  messagingSenderId: "703130744942",
+  appId: "1:703130744942:web:7fde5c75f0837a9f278e7f"
+};
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

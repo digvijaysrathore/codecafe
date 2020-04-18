@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import InLinks from './inlinks';
 import OutLinks from './outlinks';
 import { connect } from 'react-redux';
@@ -9,13 +9,17 @@ const ComponentNavbar = (props) => {
     const links = auth.uid ? <InLinks profile={profile} /> : <OutLinks />;
     return (
         <div>
-            <nav className="nav-wrapper white">
-                <div className="container">
-                    <Link to="/" className="brand-logo left black-text"></Link>
-                    { links }
-                </div>
-            </nav>
-        </div>
+                <nav className="navbar navbar-expand-md navbar-dark">
+                    <NavLink className="navbar-brand font-weight-bold" to="/">novacafe</NavLink>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navlist">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div className="collapse navbar-collapse" id="navlist">
+                        {links}
+                    </div>
+                </nav>
+            </div>
     )
 }
 

@@ -6,10 +6,13 @@ import { signOut } from '../../store/actions/authActions';
 const InLinks = (props) => {
 
     return (
-        <ul className="right">
-            <li><NavLink to="/write"><a class="waves-effect waves-light purple darken-2 btn">add project <i class="material-icons right">book</i></a></NavLink></li>
-            <li><a className="black-text" onClick={props.signOut}>Logout</a></li>
-            <li><NavLink to="/" className="btn btn-floating blue lighten-1">{props.profile.initials}</NavLink></li>
+        <ul className="navbar-nav">
+            <li className="nav-item">
+                <NavLink className="nav-link" to="/dashboard">CodeDate</NavLink>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" onClick={props.signOut}>Logout</a>
+            </li>
         </ul>
     )
 }

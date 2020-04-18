@@ -28,16 +28,27 @@ export const signUp = (newUser) => {
         const firebase = getFirebase();
         const firestore = getFirestore();
 
+        const profile = getState().firebase.profile;
+        const authorId = getState().firebase.auth.uid;
+
         firebase.auth().createUserWithEmailAndPassword(
             newUser.email,
             newUser.password
         ).then((resp) => {
             return firestore.collection('users').doc(resp.user.uid).set({
+                ...newUser,
                 name: newUser.name,
+                title: newUser.title,
+                stack: newUser.stack,
+                instagram: newUser.insta,
+                github: newUser.github,
+                love: newUser.love,
+                project: newUser.project,
+                img: newUser.img,
                 initials: newUser.name[0] + newUser.name[1]
             })
         }).then(() => {
-            dispatch({type: 'SIGNUP_SUCCESS'})
+            dispatch({type: 'SIGNUP_SUCCESS', newUser})
         }).catch(err => {
             dispatch({type: 'SIGNUP_ERROR', err})
         })

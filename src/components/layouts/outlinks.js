@@ -3,9 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 const OutLinks = () => {
     return (
-        <ul className="right">
-            <li><NavLink to="/join" className="black-text">Join <span>&#129312;</span></NavLink></li>
-            <li><NavLink to="/login" className="black-text">Login</NavLink></li>
+        <ul className="navbar-nav">
+            <li className="nav-item">
+                <NavLink className="nav-link" to="/join">Join</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink className="nav-link" to="/login">Login</NavLink>
+            </li>
         </ul>
     )
 }

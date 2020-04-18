@@ -19,23 +19,17 @@ class Signin extends Component {
     }
     render() {
         return (
-            <div className="container">
-                <br />
-                <h4>Welcome back, let's code and launch!</h4>
-                <form onSubmit={this.handleSubmit} >
-                    <div className="input-field">
-                        <label htmlFor="email">Mail ID</label>
-                        <input type="email" id="email" className="black-text" onChange={this.handleChange} />
-                    </div>
-                    <div className="input-field">
-                        <label htmlFor="password">Password</label>
-                        <input type="password" id="password" className="black-text" onChange={this.handleChange} />
-                    </div>
-                    <div className="input-field">
-                        <button className="btn blue darken-1 z-depth-0">LOGIN</button>
-                    </div>
-                </form>
-                <br />
+            <div className="container mt-5">
+            <form onSubmit={this.handleSubmit}>
+            <div className="form-group">
+                <input type="email" onChange={this.handleChange} class="form-control" id="email" placeholder="Enter email" />
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <input type="password" onChange={this.handleChange} class="form-control" id="password" placeholder="Password" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
             </div>
         )
     }
