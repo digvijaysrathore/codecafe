@@ -5,6 +5,8 @@ import { NavLink } from "react-router-dom";
 
 class Home extends Component {
     render (){
+        const {auth} = this.props;
+        if (auth.uid) return <Redirect to='/login' />
         return (
             <div className="home">
             <section className="container">
