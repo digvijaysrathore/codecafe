@@ -47,4 +47,4 @@ export default compose(
     firestoreConnect([
         { collection: 'users' }
     ])
-)(Dashboard);
+)(Home);
