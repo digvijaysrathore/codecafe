@@ -7,22 +7,23 @@ class Home extends Component {
     render (){
         return (
             <div className="home">
-            <section className="container">
-                <div className="text-center">
-                    <img src={gif}/>
-                </div>
-            </section>
-            <section className=" info container pr-5">
-            <div className="container card pl-5">
-                <h2 className="pt-5">WHY CODE ALONE</h2>
-                <h3>when, YOU CAN GO ON A CODE DATE</h3>
-                <h5>Find people to collaborate on your projects, browse through the profiles of enthusiastic makers and ping them to collaborate.</h5>
-                <NavLink to="/dashboard" className="text-white"><button type="submit" className="btn btn-primary">Code Date</button></NavLink>
-                <br />
-                <NavLink to="/join" className="text-white"><button type="submit" className="btn btn-primary">Join</button></NavLink>
-                <br />
-            </div>
-            </section>
+                <section className="p-4">
+                    <div className="container p-5">
+                    <h4 className="text-white">WHY CODE ALONE <span>when</span> YOU CAN GO ON A CODEDATE &hearts;</h4>
+                    <p>
+                    </p>
+                    <a className="text-white" href="https://github.com/digvijaysrathore/novacafe">@Github</a>
+                    </div>
+                </section>
+                <section className="p-4 bg-white">
+                    <div className="container p-5">
+                    <h4 className="">&#128512;MEET YOUR CO-FOUNDER</h4>
+                    <p className="">Meet like minded people in the cafe, who want to build that next big thing with you.</p>
+                    <p className="">Join The Cafe</p>
+                    <p className="">Browse Profiles</p>
+                    <p className="">Talk To 'em!</p>
+                    </div>
+                </section>
             </div>
         )
     }

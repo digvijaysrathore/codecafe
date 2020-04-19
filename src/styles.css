@@ -5,14 +5,18 @@
 }
 
 .home {
-    background-color: #ffc900;
+    background-color: #1e2a78;
 }
 
+span {
+    color: white;
+    letter-spacing: none;
+}
 .navbar-toggler {
     border: none;
 }
 
-h2 {
+h4 {
     letter-spacing: 5px;
 }
 
