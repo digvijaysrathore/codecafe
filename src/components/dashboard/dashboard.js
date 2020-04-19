@@ -18,9 +18,7 @@ class Dashboard extends React.Component {
                     <p className="text-white text-center">Join Nova Cafe Discord channel, <a href="https://discord.gg/mxzceH">here</a></p>
                 </nav>
             <div className="dashboard container mt-5">
-                <div className="">
-                    <ProfilesList users={users} /> 
-                </div>
+                <ProfilesList users={users} /> 
             </div>
             </div>
         )

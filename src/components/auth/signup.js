@@ -14,6 +14,7 @@ class Signup extends Component {
         github: "",
         love: "",
         project: "",
+        bio: ""
     }
     handleChange = (e) => {
         this.setState({
@@ -35,7 +36,7 @@ class Signup extends Component {
                 <input type="text" onChange={this.handleChange} class="form-control" id="title" placeholder="Title, ex. designer, developer, frontend or backend, etc." />
             </div>
             <div className="form-group">
-                <input type="text" onChange={this.handleChange} class="form-control" id="title" placeholder="Bio" />
+                <input type="text" onChange={this.handleChange} class="form-control" id="bio" placeholder="Bio" />
                 <small id="emailHelp" class="form-text text-muted">Tell people about you. What you are good at, what you like, etc. Ellaborate it as much as you can.</small>
             </div>
             <div className="form-group">
