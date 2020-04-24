@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu+2|Lato&display=swap');
+.navbar {
+    background-color: #1e2a78;
+    font-family: 'Lato', sans-serif;
+}
+
+.home {
+    background-color: #1e2a78;
+}
+
+span {
+    color: white;
+    letter-spacing: none;
+}
+.navbar-toggler {
+    border: none;
+}
+
+h4 {
+    letter-spacing: 5px;
+}
+
+h5 {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
