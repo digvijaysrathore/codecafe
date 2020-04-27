@@ -14,7 +14,6 @@ class Signup extends Component {
         github: "",
         love: "",
         project: "",
-        bio: ""
     }
     handleChange = (e) => {
         this.setState({
@@ -28,21 +27,19 @@ class Signup extends Component {
     render() {
         return (
             <div className="container mt-5">
-            <form onSubmit={this.handleSubmit}>
+            <form className="p-5" onSubmit={this.handleSubmit}>
             <div className="form-group">
                 <input type="text" onChange={this.handleChange} class="form-control" id="name" placeholder="Name" />
             </div>
             <div className="form-group">
                 <input type="text" onChange={this.handleChange} class="form-control" id="title" placeholder="Title, ex. designer, developer, frontend or backend, etc." />
             </div>
-            <div className="form-group">
-                <input type="text" onChange={this.handleChange} class="form-control" id="bio" placeholder="Bio" />
-                <small id="emailHelp" class="form-text text-muted">Tell people about you. What you are good at, what you like, etc. Ellaborate it as much as you can.</small>
-            </div>
+            <br />
             <div className="form-group">
                 <input type="text" onChange={this.handleChange} class="form-control" id="img" placeholder="Profile Image Link" />
                 <small id="emailHelp" class="form-text text-muted">Go on Instagram.com and open your profile image in new tab to copy the link.</small>
             </div>
+            <br />
             <div className="form-group">
                 <input type="text" onChange={this.handleChange} class="form-control" id="stack" placeholder="Tech stack" />
             </div>
@@ -52,6 +49,8 @@ class Signup extends Component {
             <div className="form-group">
                 <input type="text" onChange={this.handleChange} class="form-control" id="github" placeholder="Github" />
             </div>
+            <small id="emailHelp" class="form-text text-muted">Your social profiles would help devs to better connect with you.</small>
+            <br />
             <div className="form-group">
                 <input type="text" onChange={this.handleChange} class="form-control" id="love" placeholder="" />
                 <small id="emailHelp" class="form-text text-muted">What you like the most?</small>
@@ -68,6 +67,7 @@ class Signup extends Component {
                 <input type="password" onChange={this.handleChange} class="form-control" id="password" placeholder="Password" />
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <br />
             </form>
             </div>
         )
